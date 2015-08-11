@@ -43,13 +43,9 @@
     AsteroidCollisionNode * asteroid = nil;
     SpaceshipCollisionNode * spaceship = nil;
     
-    for (bullet = (BulletCollisionNode *)bullets.head;
-         bullet != nil;
-         bullet = (BulletCollisionNode *)bullet.next)
+    for (bullet in bullets)
     {
-        for (asteroid = (AsteroidCollisionNode *)asteroids.head;
-             asteroid != nil;
-             asteroid = (AsteroidCollisionNode *)asteroid.next)
+        for (asteroid in asteroids)
         {
             float dx = asteroid.position.position.x - bullet.position.position.x;
             float dy = asteroid.position.position.y - bullet.position.position.y;
@@ -80,13 +76,9 @@
         
     }
     
-    for (spaceship = (SpaceshipCollisionNode *)spaceships.head;
-         spaceship != nil;
-         spaceship = (SpaceshipCollisionNode *)spaceship.next)
+    for (spaceship in spaceships)
     {
-        for (asteroid = (AsteroidCollisionNode *)asteroids.head;
-             asteroid != nil;
-             asteroid = (AsteroidCollisionNode *)asteroid.next)
+        for (asteroid in asteroids)
         {
             float dx = asteroid.position.position.x - spaceship.position.position.x;
             float dy = asteroid.position.position.y - spaceship.position.position.y;

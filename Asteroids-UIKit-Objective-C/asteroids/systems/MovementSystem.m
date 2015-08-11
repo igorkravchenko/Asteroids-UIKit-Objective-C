@@ -87,7 +87,6 @@
         
         motion.velocity = velocity;
     }
-    
 }
 
 @end

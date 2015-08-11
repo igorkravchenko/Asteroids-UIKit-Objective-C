@@ -1,7 +1,3 @@
-//
-// Created by Igor Kravchenko on 7/22/15.
-// Copyright (c) 2015 Igor Kravchenko. All rights reserved.
-//
 
 #import "WaitForStartSystem.h"
 #import "EntityCreator.h"
@@ -9,7 +5,6 @@
 #import "GameNode.h"
 #import "AsteroidCollisionNode.h"
 #import "WaitForStart.h"
-
 
 @implementation WaitForStartSystem
 {
@@ -35,7 +30,7 @@
 - (void)addToEngine:(ASHEngine *)anEngine
 {
     engine = anEngine;
-    waitNodes = [engine getNodeList:WaitForStartNode .class];
+    waitNodes = [engine getNodeList:WaitForStartNode.class];
     gameNodes = [engine getNodeList:GameNode.class];
     asteroids = [engine getNodeList:AsteroidCollisionNode.class];
 }
@@ -47,7 +42,7 @@
 
     if(node && node.wait.startGame && game)
     {
-        for (AsteroidCollisionNode * asteroid = (AsteroidCollisionNode *) asteroids.head; asteroid; asteroid = (AsteroidCollisionNode *) asteroid.next)
+        for (AsteroidCollisionNode * asteroid in asteroids)
         {
             [creator destroyEntity:asteroid.entity];
         }

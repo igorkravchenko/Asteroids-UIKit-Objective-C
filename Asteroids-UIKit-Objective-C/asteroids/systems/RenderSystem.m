@@ -52,9 +52,7 @@
     Display * display = nil;
     UIView * displayObject = nil;
 
-    for (node = (RenderNode *)nodes.head;
-         node != nil;
-         node = (RenderNode *)node.next)
+    for (node in nodes)
     {
         display = node.display;
         displayObject = display.displayObject;

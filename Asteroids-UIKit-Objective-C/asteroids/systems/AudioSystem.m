@@ -35,13 +35,7 @@
     NSString * path = [bundle pathForResource:ShootGun ofType:nil];
     AVAudioPlayer * player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path]
                                                                     error:nil];
-    if([player prepareToPlay])
-    {
-        player.delegate = self;
-        [_players setObject:player forKey:player];
-        player.volume = 0;
-        [player play];
-    }
+    [player prepareToPlay];
 }
 
 - (void)updateNode:(AudioNode *)node
