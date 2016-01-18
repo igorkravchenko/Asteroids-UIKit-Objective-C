@@ -3,7 +3,7 @@
 
 target 'Asteroids-UIKit-Objective-C' do
 
-pod 'AshObjectiveC', '~> 1.0.8'
+pod 'AshObjectiveC', '~> 1.1.8'
 
 end
 

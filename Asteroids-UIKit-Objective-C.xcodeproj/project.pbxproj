@@ -457,6 +457,7 @@
 				9AC3C6D81B66DC5800632C2A /* Frameworks */,
 				9AC3C6D91B66DC5800632C2A /* Resources */,
 				B2126058F774C816BC701091 /* Copy Pods Resources */,
+				E8B78CDC0950352064023E45 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -542,6 +543,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Asteroids-UIKit-Objective-C/Pods-Asteroids-UIKit-Objective-C-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8B78CDC0950352064023E45 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Asteroids-UIKit-Objective-C/Pods-Asteroids-UIKit-Objective-C-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
